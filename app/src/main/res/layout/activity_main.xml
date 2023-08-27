@@ -10,16 +10,30 @@
         android:id="@+id/tv"
         android:layout_width="407dp"
         android:layout_height="56dp"
+        android:background="#6C6B6B"
+        android:paddingLeft="15dp"
         android:text="Cricbuzz"
+        android:textColor="@color/white"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:textColor="#FA0404"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="407dp"
+        android:layout_height="30dp"
+        android:background="#0A4B7E"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="56dp"
+        android:text="Matches"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleView"
@@ -28,7 +42,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv" />
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

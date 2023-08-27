@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface ApiInterface {
 
-    @GET("matches?apikey=52c86582-48fa-41bc-8c38-3d646d3a19a4")
+    @GET("api/v2.0/fixtures?api_token=4fO3NlOnR64OqrPTM64RkHn5rmuvvzkqIxPIjqLDyePcWknJMdsdV9AODhDN&include=")
     fun getProductData() : Call<MyData>
 }
